@@ -1,7 +1,6 @@
 import { HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { HttpRequestService } from 'src/app/core/services/HttpRequest/http-request.service';
-import { MoviesModule } from '../movies.module';
 
 @Injectable({
   providedIn: 'any',
