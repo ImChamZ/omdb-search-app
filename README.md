@@ -1,27 +1,62 @@
-# OmdbApp
+# OMDb Search App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+## Table of contents
+* [General info](#general-info)
+* [Built With](#built-with)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Authors](#authors)
+* [Contributing](#contributing)
 
-## Development server
+## General info
+OMDb Search app is a resonsive web based application to search movies. 
+App using http://www.omdbapi.com/ API to retrieve movie results for a given movie title.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Built With
+Application is developed using, 
+* Angular CLI - 10.2.1
+* Node: 12.15.0
+* SCSS
+* Bootstrap
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Make sure that you have Node.js v12.15.0 and NPM version 6.13.0 or above installed in your local environment. 
 
-## Build
+Clone this repo to the desired local directory using
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+  git clone --depth=1 https://github.com/ImChamZ/omdb-search-app.git <YOUR_PROJECT_NAME>
+```
+Extract and navigate into the project folder using
 
-## Running unit tests
+```bash
+  cd <YOUR_PROJECT_NAME>
+```
+Open a new terminal or open the project in a desired IDE. For the first time use install npm package dependencies using
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+  npm install
+```
 
-## Running end-to-end tests
+Serve the application in the development version using
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```bash
+  ng serve
+```
 
-## Further help
+Go to 'http://localhost:4200' in your browser.
+OMDb Search App should up and running. Enjoy searching...........
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Usage
+
+* In the main view, type a movie title that you desired to search in the header search box. 
+* Click on the 'SEARCH' button which will list down the available result from the API. 
+* Once the result is loaded you can view the details by cliking the 'DETAILS' button.
+
+## Authors
+
+* Chamara Chathuranga
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
