@@ -13,7 +13,7 @@ Used http://www.omdbapi.com/ API to retrieve movies which will display in the ap
 App is mobile/ tab resonsive so you can use in any resolution 
 
 ## Built With
-Project is developed with, 
+Application is developed using, 
 * Angular CLI - 10.2.1
 * Node: 12.15.0
 * SCSS
@@ -21,32 +21,32 @@ Project is developed with,
 
 ## Installation
 
-Make sure that you have Node.js v12.15.0 and NPM version 6.13.0 or above installed. 
+Make sure that you have Node.js v12.15.0 and NPM version 6.13.0 or above installed in your local environment. 
 
-Clone this repo using
+Clone this repo to the desired local directory using
 
 ```bash
   git clone --depth=1 https://github.com/ImChamZ/omdb-search-app.git <YOUR_PROJECT_NAME>
 ```
-Move to the appropriate directory 
+Navigate into the project folder using
 
 ```bash
   cd <YOUR_PROJECT_NAME>
 ```
-Navigate into the directory and run app for the first time using. 
+Open a new terminal or open the project in a IDE you desired. Install npm package dependencies using(first time only). 
 
 ```bash
   npm install
 ```
 
-Serve app in the development version using
+Serve the app in the development version using
 
 ```bash
   ng serve
 ```
 
 Go to 'http://localhost:4200' in your browser.
-OMDb Search App should up and running... Enjoy searching movies
+OMDb Search App should up and running. Enjoy searching movies...........
 
 ## Usage
 
