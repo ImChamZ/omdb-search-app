@@ -1,0 +1,11 @@
+<!-- Header -->
+<div class="header-container" role="banner">
+  <div class="txt-xl txt-bold">OMDB Search</div>
+  <div class="form-container">
+    <span class="search-movie-txt txt-bold"> Search a movie</span>
+    <input #searchInput (keyup.enter)="search(searchInput.value)" />
+    <button class="btn primary txt-sm" (click)="search(searchInput.value)">
+      SEARCH
+    </button>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.alert-container {
+  padding: 20px;
+  background: #e8e8e8;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.error {
+  background: #f8d7da;
+  color: red;
+  border: 1px dashed;
+}

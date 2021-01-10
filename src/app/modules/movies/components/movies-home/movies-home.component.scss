@@ -1,0 +1,19 @@
+.body-container {
+  align-items: center;
+  padding: 10px 150px;
+  background: #f8f9fa;
+  height: 92vh;
+  overflow: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .body-container {
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .body-container {
+    padding: 10px 10px;
+  }
+}

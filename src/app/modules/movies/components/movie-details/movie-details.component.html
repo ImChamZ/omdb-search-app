@@ -1,0 +1,37 @@
+<growing-spinner *ngIf="isSearching; else showMovieDetails"></growing-spinner>
+<ng-template #showMovieDetails>
+  <div *ngIf="!errorText">
+    <div>
+      <div class="txt-md">Plot</div>
+      <p class="txt-lg txt-bold">
+        {{ movieDetails.Plot }}
+      </p>
+    </div>
+    <div>
+      <div class="txt-md">Actors</div>
+      <p class="txt-lg txt-bold">
+        {{ movieDetails.Actors }}
+      </p>
+    </div>
+    <div>
+      <div class="txt-md">Ratings</div>
+      <div
+        *ngFor="
+          let rating of movieDetails.Ratings;
+          index as i;
+          first as isFirst
+        "
+      >
+        <span class="txt-lg txt-bold"
+          >- {{ rating.Source }}: {{ rating.Value }}</span
+        >
+      </div>
+    </div>
+  </div>
+
+  <text-alert
+    *ngIf="errorText"
+    type="'ERROR'"
+    [messageText]="errorText"
+  ></text-alert>
+</ng-template>

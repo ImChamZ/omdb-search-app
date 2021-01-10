@@ -1,0 +1,32 @@
+<div class="movie-container">
+  <div
+    class="movie-card"
+    *ngFor="let movie of movieList"
+    [ngClass]="{ 'detail-view': selectedId == movie.imdbID }"
+  >
+    <img class="movie-poster" src="{{ movie.Poster }}" />
+    <div class="details-container">
+      <h5 class="txt-lg txt-bold">
+        {{ movie.Title }}
+      </h5>
+      <movie-details
+        *ngIf="selectedId === movie.imdbID"
+        [movieId]="movie.imdbID"
+      ></movie-details>
+      <div>
+        <hr />
+        <div class="footer-container">
+          <span class="txt-md">
+            {{ movie.Year }}
+          </span>
+          <button
+            class="btn primary txt-sm"
+            (click)="toggleDetails(movie.imdbID)"
+          >
+            DETAILS
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

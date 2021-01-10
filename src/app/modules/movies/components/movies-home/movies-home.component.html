@@ -1,0 +1,19 @@
+<app-header (handleSearch)="handleSearch($event)"></app-header>
+<div class="body-container">
+  <growing-spinner
+    *ngIf="isSearching; else showMovieContainer"
+  ></growing-spinner>
+
+  <ng-template #showMovieContainer>
+    <text-alert
+      *ngIf="searchResult.length === 0"
+      type="{{ errorText ? 'ERROR' : 'DEFAULT' }}"
+      messageText="{{
+        errorText
+          ? errorText
+          : 'Welcome to OMDB Search. search something in the bar above !'
+      }}"
+    ></text-alert>
+    <movie-list [movieList]="searchResult"></movie-list>
+  </ng-template>
+</div>
