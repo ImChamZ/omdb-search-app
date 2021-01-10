@@ -50,7 +50,7 @@ OMDb Search App should up and running. Enjoy searching...........
 
 ## Usage
 
-* In the main screen, type a movie title that you desired to search in the header search box. 
+* In the main view, type a movie title that you desired to search in the header search box. 
 * Click on the 'SEARCH' button which will list down the available result from the API. 
 * Once the result is loaded you can view the details by cliking the 'DETAILS' button.
 
