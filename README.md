@@ -9,9 +9,8 @@
 * [Contributing](#contributing)
 
 ## General info
-OMDb Search app is web based application to search movies. 
-Used http://www.omdbapi.com/ API to retrieve movies which will display in the app with details of each.
-App is mobile/ tab resonsive so you can use in any resolution 
+OMDb Search app is a resonsive web based application to search movies. 
+App using http://www.omdbapi.com/ API to retrieve movie results for a given movie title.
 
 ## Built With
 Application is developed using, 
@@ -29,31 +28,31 @@ Clone this repo to the desired local directory using
 ```bash
   git clone --depth=1 https://github.com/ImChamZ/omdb-search-app.git <YOUR_PROJECT_NAME>
 ```
-Navigate into the project folder using
+Extract and navigate into the project folder using
 
 ```bash
   cd <YOUR_PROJECT_NAME>
 ```
-Open a new terminal or open the project in a IDE you desired. Install npm package dependencies using(first time only). 
+Open a new terminal or open the project in a desired IDE. For the first time use install npm package dependencies using
 
 ```bash
   npm install
 ```
 
-Serve the app in the development version using
+Serve the application in the development version using
 
 ```bash
   ng serve
 ```
 
 Go to 'http://localhost:4200' in your browser.
-OMDb Search App should up and running. Enjoy searching movies...........
+OMDb Search App should up and running. Enjoy searching...........
 
 ## Usage
 
-* Type title of a movie that you need to search in the search box on the header. 
-* Click on 'SEARCH' button which will list down the available result from the API. 
-* Once the result is loaded you can view each in details by cliking the 'DETAILS' button.
+* In the main screen, type a movie title that you desired to search in the header search box. 
+* Click on the 'SEARCH' button which will list down the available result from the API. 
+* Once the result is loaded you can view the details by cliking the 'DETAILS' button.
 
 ## Authors
 
